@@ -20,15 +20,17 @@ figma.connect(
         md: "md",
         lg: "lg",
       }),
-      // No matching props could be found for these Figma properties:
-      // "checked": figma.boolean('Checked'),
-      // "state": figma.enum('State', {
-      //   "Default": "default",
-      //   "Hover": "hover",
-      //   "Focused": "focused",
-      //   "Disbaled": "disbaled"
-      // })
+      isFocused: figma.enum("State", {
+        Focused: true,
+      }),
+      isSelected: figma.boolean("Checked"),
     },
-    example: (props) => <TagCheckbox size={props.size} />,
+    example: (props) => (
+      <TagCheckbox
+        size={props.size}
+        isFocused={props.isFocused}
+        isSelected={props.isSelected}
+      />
+    ),
   },
 )

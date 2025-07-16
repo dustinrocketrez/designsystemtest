@@ -12,9 +12,17 @@ import figma from "@figma/code-connect"
 
 figma.connect(
   Dropdown,
-  "https://www.figma.com/design/aNpVcEB1GGkyKSzMAs8Ba8/%E2%9D%96-Untitled-UI---Pro-Variables-v7.0--COPY-?node-id=3463%3A406457",
+  "https://www.figma.com/design/aNpVcEB1GGkyKSzMAs8Ba8/%E2%9D%96-Untitled-UI---Pro-Variables-v7.0--COPY-?node-id=3281%3A383083",
   {
-    props: {},
+    props: {
+      // No matching props could be found for these Figma properties:
+      // "type": figma.enum('Type', {
+      //   "Button": "button",
+      //   "Icon": "icon",
+      //   "Avatar": "avatar"
+      // }),
+      // "open": figma.boolean('Open')
+    },
     example: (props) => <Dropdown />,
   },
 )
